@@ -1,0 +1,58 @@
+<button id="newFontGroupBtn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 float-right rounded mb-2">
+    Create Font Group
+</button>
+
+<form id="font-group-form" class="w-full mb-2 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg hidden">
+    <div class="mb-4">
+        <div class="flex items-center">
+            <input id="group-name" type="text" placeholder="Enter group name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+        </div>
+    </div>
+
+    <div id="font-rows">
+        <!-- Initial row -->
+        <div class="mb-4 flex items-center space-x-4">
+            <input type="text" placeholder="Enter font name" class="w-1/2 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+
+            <select class="font-select w-1/2 px-4 py-2 border rounded-lg bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="">Select font</option>
+            </select>
+
+            <button type="button" class="remove-row text-red-500 font-bold text-xl">&times;</button>
+        </div>
+    </div>
+
+    <div class="flex justify-between">
+        <button type="button" id="add-row-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            Add Row
+        </button>
+        <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-green-500">
+            Submit
+        </button>
+    </div>
+</form>
+
+<table class="min-w-full">
+    <thead>
+    <tr>
+        <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+            NAME
+        </th>
+        <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+            Fonts
+        </th>
+        <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+            Count
+        </th>
+        <th class="px-6 py-3 text-xs font-medium leading-4 tracking-wider text-left text-gray-500 uppercase border-b border-gray-200 bg-gray-50">
+            Action
+        </th>
+    </tr>
+    </thead>
+
+    <tbody class="bg-white">
+
+    </tbody>
+</table>
+
+
